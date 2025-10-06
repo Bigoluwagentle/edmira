@@ -229,6 +229,12 @@
                 width: 95%;
                 line-height: 30px;
             }
+            > nav{
+                flex-direction: column;
+                > button{
+                    width: 90%;
+                }
+            }
         }
     }
     #about{
