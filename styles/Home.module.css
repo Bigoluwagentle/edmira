@@ -161,6 +161,9 @@
             > img{
                 width: 100px;
             }
+            > div{
+                min-width: 300px;
+            }
         }
     }
     #hamburger{

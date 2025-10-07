@@ -106,7 +106,7 @@ export default function Home() {
               transition={{duration:2}}
             />
             <motion.img src="/icon-instagram.svg" alt="" 
-              initial={{opacity:0, x:-100}}
+              initial={{opacity:0, x:-50}}
               whileInView={{opacity:1, x:0}}
               transition={{duration:2}}
             />
@@ -116,7 +116,7 @@ export default function Home() {
               transition={{duration:2}}
             />
             <motion.img src="icon-youtube.svg" alt="" 
-              initial={{opacity:0, x:-100}}
+              initial={{opacity:0, x:-50}}
               whileInView={{opacity:1, x:0}}
               transition={{duration:2}}
             />
