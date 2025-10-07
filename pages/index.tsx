@@ -121,7 +121,7 @@ export default function Home() {
               transition={{duration:2}}
             ></motion.i></Link>
             <Link href="https://www.instagram.com/edmira_group"><motion.i className="fa-brands fa-instagram"
-              initial={{opacity:0, x:-50}}
+              initial={{opacity:0, x:100}}
               whileInView={{opacity:1, x:0}}
               transition={{duration:2}}
             ></motion.i></Link>
@@ -132,7 +132,7 @@ export default function Home() {
               transition={{duration:2}}
             ></motion.i></Link>
             <Link href="www.linkedin.com/in/edmiragroup"><motion.i className="fa-brands fa-linkedin"
-              initial={{opacity:0, x:-50}}
+              initial={{opacity:0, x:100}}
               whileInView={{opacity:1, x:0}}
               transition={{duration:2}}
             ></motion.i></Link>
