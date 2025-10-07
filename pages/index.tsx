@@ -25,13 +25,14 @@ export default function Home() {
         <title>Edmira</title>
         <meta name="description" content="Edmira" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo1.svg" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
       </Head>
       <div id={styles.container}>
 
         <motion.div id={styles.mobile} className="mobile"
-          initial={{x:-120, opacity:0}}
-          whileInView={{x:0, opacity:1}}
+          initial={{y:-100, opacity:0}}
+          whileInView={{y:0, opacity:1}}
           transition={{duration:1}}
         >
           <article>
@@ -78,6 +79,20 @@ export default function Home() {
           </aside>
 
         </motion.header>
+
+        <div id={styles.wrapper}>
+          <motion.h1
+            initial={{y:100, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{duration:1}}
+          >Start Your Learning Journey Now!</motion.h1>
+          <motion.button
+            initial={{opacity:0, x:-100}}
+            whileInView={{opacity:1, x:0}}
+            transition={{duration:1, type: "spring", stiffness: 120}}
+            whileHover={{scale:1.3}}
+          >Get Started</motion.button>
+        </div>
         
         {/* footer section */}
         <footer id={styles.footer}>
@@ -100,26 +115,28 @@ export default function Home() {
             <Link href="/">My Courses</Link>
           </motion.section>
           <section>
-            <motion.img src="/icon-facebook.svg" alt="" 
+            <Link href="/"><motion.i className="fa-brands fa-facebook"
               initial={{opacity:0, x:100}}
               whileInView={{opacity:1, x:0}}
               transition={{duration:2}}
-            />
-            <motion.img src="/icon-instagram.svg" alt="" 
+            ></motion.i></Link>
+            <Link href="https://www.instagram.com/edmira_group"><motion.i className="fa-brands fa-instagram"
               initial={{opacity:0, x:-50}}
               whileInView={{opacity:1, x:0}}
               transition={{duration:2}}
-            />
-            <motion.img src="/icon-twitter.svg" alt="" 
+            ></motion.i></Link>
+            
+            <Link href="https://x.com/edmira_group"><motion.i className="fa-brands fa-twitter"
               initial={{opacity:0, x:100}}
               whileInView={{opacity:1, x:0}}
               transition={{duration:2}}
-            />
-            <motion.img src="icon-youtube.svg" alt="" 
+            ></motion.i></Link>
+            <Link href="www.linkedin.com/in/edmiragroup"><motion.i className="fa-brands fa-linkedin"
               initial={{opacity:0, x:-50}}
               whileInView={{opacity:1, x:0}}
               transition={{duration:2}}
-            />
+            ></motion.i></Link>
+            
           </section>
           <section>
             <motion.h2
