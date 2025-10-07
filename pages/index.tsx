@@ -79,6 +79,64 @@ export default function Home() {
 
         </motion.header>
         
+        {/* footer section */}
+        <footer id={styles.footer}>
+          <section>
+            <motion.img src="/Logo1.jpg" 
+              initial={{scale:0, opacity:0}}
+              whileInView={{scale:1, opacity:1}}
+              transition={{duration:2}}
+            />
+          </section>
+          <motion.section
+            initial={{x:-100, opacity:0}}
+            whileInView={{x:0, opacity:1}}
+            transition={{duration:2}}
+          >
+            <Link href="/">Home</Link>
+            <Link href="#about">About</Link>
+            <Link href="/">Forum</Link>
+            <Link href="/">News Feed</Link>
+            <Link href="/">My Courses</Link>
+          </motion.section>
+          <section>
+            <motion.img src="/icon-facebook.svg" alt="" 
+              initial={{opacity:0, x:100}}
+              whileInView={{opacity:1, x:0}}
+              transition={{duration:2}}
+            />
+            <motion.img src="/icon-instagram.svg" alt="" 
+              initial={{opacity:0, x:-100}}
+              whileInView={{opacity:1, x:0}}
+              transition={{duration:2}}
+            />
+            <motion.img src="/icon-twitter.svg" alt="" 
+              initial={{opacity:0, x:100}}
+              whileInView={{opacity:1, x:0}}
+              transition={{duration:2}}
+            />
+            <motion.img src="icon-youtube.svg" alt="" 
+              initial={{opacity:0, x:-100}}
+              whileInView={{opacity:1, x:0}}
+              transition={{duration:2}}
+            />
+          </section>
+          <section>
+            <motion.h2
+              initial={{opacity:0, x:100}}
+              whileInView={{opacity:1, x:0}}
+              transition={{duration:2, type: "spring", stiffness:120, delay:0.8}}
+            >Subscribe</motion.h2>
+            <div>
+              <input type="email" placeholder="Enter your Email Address" />
+              <motion.button
+                initial={{opacity:0, y:100}}
+                whileInView={{opacity:1, y:0}}
+                transition={{duration:2}}
+              >Subscribe</motion.button>
+            </div>
+          </section>
+        </footer>
       </div>
     </>
   );
