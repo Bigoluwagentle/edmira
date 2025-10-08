@@ -119,7 +119,7 @@ export default function Home() {
             <motion.img src="/illustration.jpg" alt="" 
               initial={{scale:0,opacity:0}}
               whileInView={{scale:1, opacity:1}}
-              transition={{duration:2}}
+              transition={{duration:1}}
             />
           </div>
         </section>
