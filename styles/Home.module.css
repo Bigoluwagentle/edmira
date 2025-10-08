@@ -276,7 +276,7 @@
                     font-size: 2rem;
                 }
                 > p{
-                    margin: 10px;
+                    margin-left: 0px;
                     width: 98%;
                 }
                 > nav{
@@ -285,6 +285,7 @@
                     width: 100%;
                     > button{
                         width: 90%;
+                        margin-left: 0px;
                     }
                 }
                 > img{
