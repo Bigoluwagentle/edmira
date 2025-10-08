@@ -271,12 +271,16 @@
             > div{
                 > h1{
                     margin-left: 0px;
+                    width: 98%;
+                    font-size: 2rem;
                 }
                 > p{
                     margin-left: 0px;
+                    width: 98%;
                 }
                 > nav{
                     justify-content: center;
+                    width: 95%;
                 }
                 > img{
                     margin-top: 100px;
@@ -289,6 +293,9 @@
                 > nav{
                     width: 95%;
                     margin-bottom: 50px;
+                    > li{
+                        margin-left: 0px;
+                    }
                 }
             }
             > aside{
