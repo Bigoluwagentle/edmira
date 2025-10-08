@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
 import styles from "@/styles/Home.module.css";
+import Course from "./course";
 import Link from "next/link";
 
 export default function Home() {
@@ -79,6 +80,8 @@ export default function Home() {
           </aside>
 
         </motion.header>
+
+        <Course/>
 
         <div id={styles.wrapper}>
           <motion.h1
