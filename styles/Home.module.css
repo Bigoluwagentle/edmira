@@ -2,6 +2,103 @@
     background-color: #FDFDFD;
     width: 100%;
     min-height: 100vh;
+    > section{
+        margin-top: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > div{
+            flex: 1;
+            > h1{
+                margin-left: 30px;
+                font-size: 2.7rem;
+                width: 100%;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                + h1{
+                    color: #d98021;
+                }
+            }
+            > p{
+                font-size: 1.1rem;
+                margin-left: 30px;
+                margin-top: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            > nav{
+                display: flex;
+                > button{
+                    min-width: 200px;
+                    margin-left: 30px;
+                    margin-top: 50px;
+                    min-height: 50px;
+                    background-color: #082E39;
+                    color: #FDFDFD;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    + button{
+                        background-color: #CBA244;
+                    }
+                }
+            }
+            
+            > img{
+                width: 100%;
+            }
+        }
+    }
+
+    > summary{
+        margin-top: 100px;
+        > section{
+            display: flex;
+            width: 100%;
+            > nav{
+                width: 50%;
+                background-color: #082E39;
+                min-height: 40vh;
+                border-radius: 8px;
+                padding: 20px;
+                > h4{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    color: #F0F0EF;
+                    font-size: 2rem;
+                }
+                > p{
+                    margin-top: 15px;
+                    color: #FDFDFD;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+                > li{
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    color: #F0F0EF;
+                    font-size: 0.8rem;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+            }
+        }
+        > aside{
+            display: flex;
+            justify-content: end;
+            > nav{
+                width: 50%;
+                min-height: 30vh;
+                background-color: #d98021;
+                > h4{
+                    margin: 20px;
+                    color: #F0F0EF;
+                    font-size: 2rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                > p{
+                    color: #F0F0EF;
+                    margin-left: 20px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+            }
+        }
+    }
 }
 
 /* Header */
@@ -167,6 +264,42 @@
     display: none;
 }
 @media screen and (max-width: 920px){
+    #container{
+        > section{
+            flex-direction: column;
+            text-align: center;
+            > div{
+                > h1{
+                    margin-left: 0px;
+                }
+                > p{
+                    margin-left: 0px;
+                }
+                > nav{
+                    justify-content: center;
+                }
+                > img{
+                    margin-top: 100px;
+                }
+            }
+        }
+        > summary{
+            > section{
+                justify-content: center;
+                > nav{
+                    width: 95%;
+                    margin-bottom: 50px;
+                }
+            }
+            > aside{
+                justify-content: center;
+
+                > nav{
+                    width: 95%;
+                }
+            }
+        }
+    }
     #header{
         > section{
             > img{
@@ -204,6 +337,7 @@
     #mobile{
         display: none;
         width: 100%;
+        z-index: 2;
         > article{
             width: 85%;
             position: absolute;
